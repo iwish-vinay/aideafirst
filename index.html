@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIdeaFirst - Transform Your Ideas into Reality</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>AIdeaFirst - Transforming Ideas Into Intelligent Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -207,6 +207,19 @@
             color: var(--text-secondary-color);
         }
 
+        /* Who We Are Section */
+        #who-we-are {
+            background-color: var(--surface-bg);
+        }
+        .about-us-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-us-content p {
+            font-size: 1.1rem;
+        }
+
         /* How It Works Section */
         #how-it-works {
             background-color: var(--surface-bg);
@@ -298,11 +311,31 @@
             color: var(--primary-color);
         }
 
+        #contact .contact-details {
+            margin-top: 3rem;
+            font-size: 1.1rem;
+        }
+
+        #contact .contact-details p {
+            margin-bottom: 0.5rem;
+        }
+
+        #contact .contact-details a {
+            color: #fff;
+            text-decoration: none;
+        }
+
         /* Footer */
         .main-footer {
             background: var(--surface-bg);
             padding: 3rem 0;
             text-align: center;
+        }
+
+        .footer-tagline {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary-color);
         }
 
         .footer-links {
@@ -375,10 +408,11 @@
             <a href="#" class="logo">AIdea<span>First</span></a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#cta">Contact</a></li>
+                    <li><a href="#what-we-do">What We Do</a></li>
+                    <li><a href="#who-we-are">Who We Are</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -387,64 +421,84 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Transforming Ideas into Intelligent Reality</h1>
-                <p>AIdeaFirst is the launchpad for your next big innovation. We leverage cutting-edge AI to refine, validate, and blueprint your concepts.</p>
-                <a href="#features" class="btn btn-primary">Explore Our AI</a>
+                <h1>Transforming Ideas Into Intelligent Solutions</h1>
+                <p>AIdeaFirst is a next-generation technology studio that empowers businesses and communities to thrive in a digital-first world. From concept to launch, we design, build, and optimize experiences fueled by the power of AI and human-centered design.</p>
+                <a href="#what-we-do" class="btn btn-primary">Start Your Journey With Us</a>
             </div>
         </section>
 
-        <section id="features" class="section">
+        <section id="what-we-do" class="section">
             <div class="container">
-                <h2 class="section-title">Core Features</h2>
+                <h2 class="section-title">What We Do</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3>AI-Powered Ideation</h3>
-                        <p>Break through creative blocks. Our AI generates and expands upon your initial thoughts, uncovering unique angles and possibilities.</p>
+                        <div class="icon"><i class="fas fa-object-group"></i></div>
+                        <h3>Product Development & Design</h3>
+                        <p>End-to-end creation of digital products, from initial concept and user experience to final launch and iteration.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="icon"><i class="fas fa-cogs"></i></div>
-                        <h3>Intelligent Prototyping</h3>
-                        <p>Visualize your concept. We create interactive, data-driven prototypes that simulate user interaction and market fit.</p>
+                        <div class="icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Integration & Custom Agents</h3>
+                        <p>Deploy custom AI agents and integrate intelligent automation into your existing business workflows for maximum efficiency.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Data-Driven Strategy</h3>
-                        <p>Go to market with confidence. Our platform analyzes market trends and predicts potential challenges and opportunities for your idea.</p>
+                        <div class="icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Startup MVPs and Prototyping</h3>
+                        <p>We help founders launch quickly with high-quality Minimum Viable Products and interactive prototypes to validate ideas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-palette"></i></div>
+                        <h3>Digital Branding & Visual Identity</h3>
+                        <p>Craft a memorable brand with a compelling visual identity, logo, and messaging that resonates with your audience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <h3>Community Impact Tools</h3>
+                        <p>Building AI-powered tools to support non-profits, educators, and local communities, bridging access gaps with technology.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works" class="section">
+        <section id="who-we-are" class="section">
             <div class="container">
-                <h2 class="section-title">How It Works</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h4>1. Submit Your Idea</h4>
-                        <p>Provide your initial concept through our secure platform. The more detail, the better our AI can assist.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h4>2. AI Analysis & Refinement</h4>
-                        <p>Our algorithms analyze your idea, suggest improvements, identify potential markets, and generate variations.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h4>3. Get Your Blueprint</h4>
-                        <p>Receive a comprehensive innovation blueprint, including a prototype plan, market analysis, and strategic roadmap.</p>
-                    </div>
+                <h2 class="section-title">Who We Are</h2>
+                <div class="about-us-content">
+                    <p>At AIdeaFirst, we believe in the magic of transformation. We collaborate with visionaries, founders, and organizations to turn complex ideas into meaningful products and intelligent systems. Whether it's launching a bold new startup, redefining user experiences, or integrating AI to streamline operations—we lead with strategy, craft with care, and build for impact.</p>
+                    <p>We are not just a development agency. We are your AI innovation partner, creative problem solvers, and product builders who deeply care about shaping the future of technology.</p>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="section">
+        <section id="why-choose-us" class="section">
             <div class="container">
-                <h2 class="section-title">Trusted by Innovators</h2>
-                <div class="testimonial-card">
-                    <p>"AIdeaFirst didn't just validate our idea; it transformed it. The insights we gained were invaluable and saved us months of research."</p>
-                    <div class="testimonial-author">- Jane Doe, CEO of TechForward</div>
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI-First Thinking</h3>
+                        <p>We design with intelligence and scale in mind from day one.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Design-Led Execution</h3>
+                        <p>We craft user experiences that delight, convert, and retain.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Speed Without Compromise</h3>
+                        <p>Agile development that delivers value quickly without cutting corners.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Scalable Architecture</h3>
+                        <p>We build robust solutions that grow seamlessly with your vision.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Transparent Partnership</h3>
+                        <p>A collaborative process with clear communication and shared success.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -454,23 +508,36 @@
                 <h2 class="section-title">Ready to Build the Future?</h2>
                 <p>Don't let a brilliant idea remain just an idea. Let's give it the intelligence it deserves. Get started with AIdeaFirst today.</p>
                 <a href="#" class="btn btn-light">Start Your Free Trial</a>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Let’s Build Your AIdea</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">We partner with clients who are as passionate about innovation as we are. Whether you're a founder, educator, enterprise leader, or creative visionary—let's make your AIdea a reality.</p>
+                <div style="text-align: center;">
+                    <a href="#" class="btn btn-primary">Book a Discovery Call →</a>
+                    <div class="contact-details">
+                        <p>📧 Email: <a href="mailto:hello@AIdeaFirst.com">hello@AIdeaFirst.com</a></p>
+                        <p>📍 Location: Cary, North Carolina (Serving clients globally)</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="main-footer">
         <div class="container">
+            <p class="footer-tagline">AIdeaFirst.com – Transforming ideas into intelligent, scalable, and inclusive solutions.</p>
             <div class="footer-links">
-                <a href="#">About Us</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+                <a href="#">Careers</a>
+                <a href="#">Sitemap</a>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2024 AIdeaFirst. All rights reserved.</p>
+            <p>&copy; 2025 AIdeaFirst, LLC. All rights reserved.</p>
         </div>
     </footer>
 
