@@ -67,10 +67,14 @@
             text-decoration: none;
         }
 
-        .logo span {
+        .logo .logo-gradient {
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .logo .logo-highlight {
+            color: #FF2D55; /* Radiant Red */
         }
 
         .main-nav ul {
@@ -405,7 +409,7 @@
 
     <header class="main-header">
         <div class="container">
-            <a href="#" class="logo">AIdea<span>First</span></a>
+            <a href="#" class="logo"><span class="logo-highlight">AI</span>dea<span class="logo-gradient">First</span></a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#what-we-do">What We Do</a></li>
@@ -503,11 +507,34 @@
             </div>
         </section>
 
-        <section id="cta" class="section">
+        <section id="products" class="section">
             <div class="container">
-                <h2 class="section-title">Ready to Build the Future?</h2>
-                <p>Don't let a brilliant idea remain just an idea. Let's give it the intelligence it deserves. Get started with AIdeaFirst today.</p>
-                <a href="#" class="btn btn-light">Start Your Free Trial</a>
+                <h2 class="section-title">Our Flagship Products</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-box-open"></i></div>
+                        <h3>AIdea Launch Toolkit</h3>
+                        <p>Everything you need to bring your startup vision to life, from brand consulting to a custom AI agent prototype.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-cogs"></i></div>
+                        <h3>AIdea Agents</h3>
+                        <p>Deploy fully customized AI agents for customer support, lead gen, and more, with full lifecycle management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>LearnWithAI (Coming Soon)</h3>
+                        <p>A platform designed to empower students with personalized academic support, career advice, and test prep tools.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fab fa-wpforms"></i></div>
+                        <h3>AIdeaForms</h3>
+                        <p>Elevate form experiences with smart automation, dynamic responses, and insightful analytics dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="section-title">Let’s Build Your AIdea</h2>
@@ -522,7 +549,7 @@
             </div>
         </section>
     </main>
-ß
+
     <footer class="main-footer">
         <div class="container">
             <p class="footer-tagline">AIdeaFirst.com – Transforming ideas into intelligent, scalable, and inclusive solutions.</p>
