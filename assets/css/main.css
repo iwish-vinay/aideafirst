@@ -565,7 +565,7 @@ a:hover,
 .about-sec p{
   color: #555;
   font-size: 0.9rem;
-  margin-bottom: 10% 0;
+  margin-bottom: 5%;
 }
 .about-usp{
   padding:0 5%;
@@ -651,3 +651,231 @@ a:hover,
     .accordion-button::after {
       display: none;
     }
+
+      .menu-toggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+
+    /*Responsive Views*/
+    @media(min-width: 1600px){
+
+        .container{
+           max-width: 85% !important;
+        }
+        .custom-header a.nav-link,
+        .custom-header .btn-outline-light,
+        .hero-sec .btn{
+           font-size: 16px;
+        }
+        .hero-sec h1{
+           font-size:3rem;
+        }
+        .service-content h5,
+        .product-sec .product-card h4{
+           font-size: 1.75rem;
+        }
+        .hero-sec p,
+        .service-content p,
+        .product-sec .product-card p,
+        .product-sec .product-card ul,
+        .benefit-desc,
+        .about-sec p,
+        .global-sec p{
+          font-size:1.2rem;
+        }
+        .feature-title,
+        .section-heading .subheading{
+          font-size:1.0rem;
+        }
+        .feature-icon {
+          height: 75px;
+         }
+         .benefit-icon{
+           height: 100px;
+         }
+         .benefit-title{
+          font-size: 1.5rem;
+         }
+         .section-heading .main-heading,
+         .about-sec h2{
+           font-size: 2.5rem;
+         }
+         .product-sec .product-card .prd-icon{
+          height: 60px;
+         }
+         .process-title,
+         .about-sec h3{
+          font-size: 1.85rem;
+         }
+         .process-description{
+          font-size: 1.2rem;
+         }
+         .process-number{
+          min-width: 65px;
+          font-size: 2rem;
+         }
+
+         .about-hero {
+           height: 400px;
+         }
+         .about-usp .gradient-card .text{
+          font-size: 1.5rem;
+         }
+         .global-sec h4{
+          font-size: 2rem;
+         }
+    }
+
+   
+
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 60px;
+    margin-top: 105px;
+    background: #ff3e93;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .custom-header a.nav-link{
+    margin: 0;
+    border-bottom: #ffffff57 solid 1px;
+    padding: 10px 0;
+  }
+  .cta-button {
+    text-align: center;
+    margin: 15px auto;
+    width: 100%;
+  }
+  .custom-header .btn-outline-light{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .custom-header .brand{
+    width: 25%;
+  }
+  .feature-card{
+    width: 31%;
+    margin-bottom: 2%;
+  }
+  .feature-sec{
+    padding: 5%;
+  }
+  .product-sec .product-card ul li{
+    width: 100%;
+  }
+  footer .footer-logo{
+    width: 20%;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .custom-header .brand {
+        width: 50%;
+    }
+    .hero-sec{
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .hero-sec h1 {
+      font-size: 2.0rem;
+    }
+    .custom-header{
+      margin: 20px 0;
+    }
+    .feature-sec,
+    .benefits-sec{
+      padding: 30px;
+    }
+    .product-sec .product-card{
+      width:95%;
+      margin: 20px auto;
+    }
+    .feature-card,
+    .benefit-card{
+      width: 48%;
+      padding: 8px;
+    }
+    .nav-links.active{
+      width: 75%;
+    }
+    .section-heading{
+      padding: 20px 10%;
+    }
+    .section-heading .main-heading{
+      font-size: 1.5rem;
+    }
+    .service-content h5,
+    .product-sec .product-card h4,
+    .process-title{
+      font-size: 1.2rem;
+    }
+    .service-content p,
+    .product-sec .product-card p,
+    .product-sec .product-card ul,
+    .process-description,
+    .benefit-desc{
+      font-size: 0.8rem;
+    }
+    .benefit-title,
+    .global-sec h4{
+      font-size: 1rem;
+    }
+    .product-sec .product-card img.img-fluid{
+       margin-bottom: 30px;
+    }
+    .feature-title {
+      font-size: 0.7rem;
+      line-height: 1.2;
+    }
+    .global-sec p{
+      font-size: 75%;
+    }
+
+    footer .footer-logo{
+      width:35%;
+    }
+    .about-hero{
+      display: none !important;
+    }
+    .about-sec img.img-fluid{
+       margin-bottom:30px;
+    }
+    .nav-links.active{
+      margin-right:15px;
+      margin-top:85px;
+    }
+    .about-sec h2{
+      font-size: 1.5rem;
+    }
+    .about-sec h3{
+      font-size: 0.9rem;
+    }
+  }

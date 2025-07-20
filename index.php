@@ -16,6 +16,9 @@
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -40,8 +43,8 @@
           launch impactful AI-powered products—fast and beautifully.
         </p>
         <div>
-          <a href="#" class="btn btn-red">Get Started</a>
-          <a href="#" class="btn btn-gray">Book A Call</a>
+          <a href="#Services" class="btn btn-red">Get Started</a>
+          <a href="#Contact" class="btn btn-gray">Book A Call</a>
         </div>
       </div>
 
@@ -420,23 +423,32 @@ We launch, test, and continuously improve your product with data-driven enhancem
     <!-- Contact Form -->
     <div class="col-md-8">
       <div class="contact-card">
-        <form>
+
+
+
+       <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="form">
+
+    <input type="hidden" name="access_key" value="57df4725-6b13-448c-b23c-aa39a3dd52ed" />
+    <input type="hidden" name="subject" value="New Enquiry From AIdeaFirst" />
+    <input type="hidden" name="from_name" value="AIdeaFirst" />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
           <div class="mb-4">
-            <input type="text" class="form-control" placeholder="Name" required />
+            <input type="text" name="name" class="form-control" placeholder="Name" required />
           </div>
           <div class="mb-4">
-            <input type="email" class="form-control" placeholder="Email" required />
+            <input type="email" name="email" class="form-control" placeholder="Email" required />
           </div>
           <div class="mb-4">
-            <input type="tel" class="form-control" placeholder="Phone No." required />
+            <input type="tel" name="phone" class="form-control" placeholder="Phone No." required />
           </div>
           <div class="mb-4">
-            <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
           </div>
           <div>
             <button type="submit" class="btn btn-submit">SUBMIT</button>
           </div>
-        </form>
+          <p class="text-base text-center text-gray-400 p-5" id="result"></p>
+        </form> 
       </div>
     </div>
   </div>
@@ -447,21 +459,62 @@ We launch, test, and continuously improve your product with data-driven enhancem
 <!-- footer -->
   <?php include('footer.php'); ?>
 
-  
-
-
 <!-- Back to Top Button -->
 <button id="backToTop" class="btn btn-danger rounded-circle shadow" title="Back to Top">
   ↑
 </button>
 
 
-<!-- Bootstrap 5 JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 
 <script>
+
+  const form = document.getElementById("form");
+  const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
+});
+
   window.addEventListener("load", function () {
     const loader = document.getElementById("pageLoader");
     loader.style.opacity = "0";

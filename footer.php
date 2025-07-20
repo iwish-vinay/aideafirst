@@ -1,7 +1,7 @@
 <footer class="text-center py-5">
   <div class="container">
 
-    <a href="#" class="footer-logo">
+    <a href="/" class="footer-logo">
       <img src="assets/img/logo.png" alt="AldeaFirst" class="img-fluid" />
     </a>
 
@@ -31,3 +31,30 @@
     <small>Copyrights © 2025, All rights Reserved</small>
   </div>
 </footer>
+
+<script>
+  const ctaButton = document.querySelector('.cta-button');
+  const navLinks = document.getElementById('nav-links');
+  const header = document.querySelector('.custom-header');
+
+  function moveCTA() {
+    if (window.innerWidth < 992) {
+      if (!navLinks.contains(ctaButton)) {
+        navLinks.appendChild(ctaButton);
+      }
+    } else {
+      if (!header.contains(ctaButton)) {
+        header.appendChild(ctaButton);
+      }
+    }
+  }
+
+  // Run on load and on resize
+  window.addEventListener('DOMContentLoaded', moveCTA);
+  window.addEventListener('resize', moveCTA);
+
+  // Menu toggle
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    navLinks.classList.toggle('active');
+  });
+</script>

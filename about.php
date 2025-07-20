@@ -16,6 +16,9 @@
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
+   <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
