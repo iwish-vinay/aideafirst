@@ -254,11 +254,11 @@
       <div class="col-md-6 order-2  ps-md-5" data-aos="fade-up" data-aos-delay="500">
         <h4><img src="assets/img/ai-form-icon.png" alt="AIdeaForms" class="prd-icon"> AIdeaForms</h4>
         <p >
-          Elevate form experiences with smart automation: - AI-assisted intake forms for clients, patients, or leads  Dynamic form responses based on user input - Analytics dashboard to track trends and insights - Seamless integration with backend systems
+          Elevate form experiences with smart automation: - AI-assisted intake forms for clients or leads  Dynamic form responses based on user input - Analytics dashboard to track trends and insights - Seamless integration with backend systems
         </p>
         <b>INCLUDES</b>
           <ul >
-          <li>Client & Patient Intake Forms</li>
+          <li>Client Intake Forms</li>
           <li>Integrated Analytics Dashboards</li>
           <li>Dynamic Response Forms</li>
         </ul>
